@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title data-i18n="title">Academi67 — Інстытут клінічных стандартаў · LABS67</title>
 <!-- Favicons -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231df59a'/%3E%3Cpolygon points='16,2 30,9 30,23 16,30 2,23 2,9' fill='%2303050e' fill-opacity='.15'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-size='7' font-weight='900' font-family='monospace' fill='%2303050e'%3EA67%3C/text%3E%3C/svg%3E">
@@ -10,10 +10,12 @@
 <meta name="theme-color" content="#03050e">
 <meta name="msapplication-TileColor" content="#1df59a">
 <meta name="description" content="Academi67 — институт клинических стандартов будущего. Сертификация врачей концерна LABS67.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#030a05;--bg2:#050f07;--panel:#071209;--b1:rgba(255,255,255,0.07);--b2:rgba(255,255,255,0.14);--green:#1df59a;--green2:#5fffc0;--green-dim:rgba(29,245,154,0.42);--gold:#e8b840;--cyan:#30dcff;--text:#d0f0e0;--muted:rgba(140,200,170,0.45);}
-*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;overflow-x:hidden;}
 body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(29,245,154,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(29,245,154,0.02) 1px,transparent 1px);background-size:80px 80px;pointer-events:none;}
 nav{position:fixed;top:0;left:0;right:0;z-index:999;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 44px;background:rgba(3,10,5,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--b1);}
@@ -182,7 +184,24 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
   .lang-dropdown-btn{display:flex;align-items:center;gap:5px;padding:6px 10px;background:transparent;border:none;cursor:pointer;color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:0.5rem;}
   .lang-dropdown-btn svg{width:16px;height:10px;}
 }
-
+/* ── MOBILE OPTIMIZATION ── */
+*,*::before,*::after{box-sizing:border-box;}
+button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+body{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+input,textarea,select{font-size:1rem !important;}
+@media(max-width:480px){
+  .hero{padding:60px 16px 40px;}
+  .hero-title{font-size:clamp(2rem,8vw,3rem) !important;}
+  .hero-sub{font-size:0.85rem;line-height:1.7;margin-bottom:32px;}
+  .hero-btns{flex-direction:column;align-items:stretch;gap:10px;}
+  .manifesto-grid,.who-grid,.apply-grid,.tracks-grid{grid-template-columns:1fr;}
+  .section,.manifesto-sec,.who-sec,.apply-sec{padding:48px 16px;}
+  .track-card,.who-item,.apply-card{padding:24px 18px;}
+  footer{padding:28px 16px;}
+  nav{padding:0 12px;}
+  .online-txt{display:none;}
+  .nav-cta{padding:6px 10px;font-size:0.48rem;}
+}
 </style>
 </head>
 <body>

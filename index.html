@@ -203,11 +203,11 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="h-eyebrow">// Academi67 · Концерн LABS67</div>
+    <div class="h-eyebrow" data-i18n="h_eyebrow">// Academi67 · Концерн LABS67</div>
     <h1 class="hero-title">
       Институт клинических<br>стандартов <span class="ac">будущего</span>
     </h1>
-    <p class="hero-sub">Не повышение квалификации — перезагрузка клинического мышления. Врачи, прошедшие Academi67, работают иначе. Пациенты это чувствуют.</p>
+    <p class="hero-sub" data-i18n="hero_sub">Не повышение квалификации — перезагрузка клинического мышления. Врачи, прошедшие Academi67, работают иначе. Пациенты это чувствуют.</p>
     <div class="hero-btns">
       <a href="#apply" class="btn-green">// Подать заявку</a>
       <a href="#tracks" class="btn-out">Программы →</a>
@@ -223,7 +223,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
 <section class="manifesto-sec" id="manifesto">
   <div class="manifesto-grid">
     <div class="manifesto-left">
-      <div class="sec-tag">// Наш подход</div>
+      <div class="sec-tag" data-i18n="sec_tag_0">// Наш подход</div>
       <h2 class="sec-title">Не курс.<br><span class="ac">Перезагрузка.</span></h2>
       <div class="big-quote">«Каждый специалист концерна LABS67 прошёл через Academi67. Это не опция — это стандарт.»</div>
       <p>Мы создали институт, потому что хороших врачей мало — не по знаниям, а по подходу. Academi67 меняет то, как специалист думает о пациенте, о процессе и о технологиях.</p>
@@ -254,7 +254,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
 </section>
 
 <section class="section" id="tracks">
-  <div class="sec-tag">// Программы</div>
+  <div class="sec-tag" data-i18n="sec_tag_1">// Программы</div>
   <h2 class="sec-title">Три <span class="ac">трека</span></h2>
   <p class="sec-lead">Каждый трек — отдельная программа с чёткими целями и результатами.</p>
   <div class="tracks-grid">
@@ -283,7 +283,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
 </section>
 
 <section class="who-sec" id="who">
-  <div class="sec-tag">// Для кого</div>
+  <div class="sec-tag" data-i18n="sec_tag_2">// Для кого</div>
   <h2 class="sec-title">Кто приходит в <span class="ac">Academi67</span></h2>
   <div class="who-grid">
     <div class="who-list">
@@ -320,7 +320,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
 </section>
 
 <section class="apply-sec" id="apply">
-  <div class="sec-tag">// Подать заявку</div>
+  <div class="sec-tag" data-i18n="sec_tag_3">// Подать заявку</div>
   <h2 class="sec-title">Начните <span class="ac">сейчас</span></h2>
   <div class="apply-grid">
     <div>
@@ -404,58 +404,76 @@ function appSubmit(){const b=document.querySelector('.fsub');b.textContent='// �
 // ── I18N ──
 const i18n = {
   by: {
-    title: 'Academi67 — Інстытут клінічных стандартаў · LABS67',
     nav_cta: 'Падаць заяўку',
-    hero_tag: '// Адукацыя · Стандарты · Будучыня',
-    hero_h1_1: 'Інстытут клінічных',
-    hero_h1_2: 'стандартаў будучыні',
-    hero_sub: 'Не павышэнне кваліфікацыі — поўная перазагрузка клінічнага мыслення. Усе ўрачы LABS67 праходзяць праз Academi67.',
-    back: '← LABS67',
+    h_eyebrow: '// Academi67 · Канцэрн LABS67',
+    hero_sub: 'Не павышэнне кваліфікацыі — поўная перазагрузка клінічнага мыслення. Усе ўрачы LABS67 праходзяць праз Academi67 і адаптуюцца пад пратаколы канцэрна.',
+    hero_btn1: '// Праграмы навучання',
+    hero_btn2: 'Падаць заяўку →',
+    chat_online: '● Анлайн',
+    sec_tag_0: '// Наш подход',
+    sec_tag_1: '// Программы',
+    sec_tag_2: '// Для кого',
+    sec_tag_3: '// Падаць заявку',
   },
   ua: {
-    title: 'Academi67 — Інститут клінічних стандартів · LABS67',
     nav_cta: 'Подати заявку',
-    hero_tag: '// Освіта · Стандарти · Майбутнє',
-    hero_h1_1: 'Інститут клінічних',
-    hero_h1_2: 'стандартів майбутнього',
-    hero_sub: 'Не підвищення кваліфікації — повне перезавантаження клінічного мислення. Всі лікарі LABS67 проходять через Academi67.',
-    back: '← LABS67',
+    h_eyebrow: '// Academi67 · Концерн LABS67',
+    hero_sub: 'Не підвищення кваліфікації — повне перезавантаження клінічного мислення. Всі лікарі LABS67 проходять через Academi67 та адаптуються до протоколів концерну.',
+    hero_btn1: '// Програми навчання',
+    hero_btn2: 'Подати заявку →',
+    chat_online: '● Онлайн',
+    sec_tag_0: '// Наш подход',
+    sec_tag_1: '// Программы',
+    sec_tag_2: '// Для кого',
+    sec_tag_3: '// Подати заявку',
   },
   en: {
-    title: 'Academi67 — Institute of Clinical Standards · LABS67',
     nav_cta: 'Apply',
-    hero_tag: '// Education · Standards · Future',
-    hero_h1_1: 'Institute of Clinical',
-    hero_h1_2: 'Standards of the Future',
-    hero_sub: 'Not qualification upgrading — a complete reboot of clinical thinking. All LABS67 doctors go through Academi67.',
-    back: '← LABS67',
+    h_eyebrow: '// Academi67 · LABS67 Concern',
+    hero_sub: 'Not qualification upgrading — a complete reboot of clinical thinking. All LABS67 doctors go through Academi67 and adapt to the concern\'s protocols.',
+    hero_btn1: '// Training programmes',
+    hero_btn2: 'Apply →',
+    chat_online: '● Online',
+    sec_tag_0: '// Наш подход',
+    sec_tag_1: '// Программы',
+    sec_tag_2: '// Для кого',
+    sec_tag_3: '// Apply',
   },
   pl: {
-    title: 'Academi67 — Instytut Standardów Klinicznych · LABS67',
     nav_cta: 'Aplikuj',
-    hero_tag: '// Edukacja · Standardy · Przyszłość',
-    hero_h1_1: 'Instytut Kliniczny',
-    hero_h1_2: 'Standardów Przyszłości',
-    hero_sub: 'Nie podnoszenie kwalifikacji — pełny restart myślenia klinicznego. Wszyscy lekarze LABS67 przechodzą przez Academi67.',
-    back: '← LABS67',
+    h_eyebrow: '// Academi67 · Koncern LABS67',
+    hero_sub: 'Nie podnoszenie kwalifikacji — pełny restart myślenia klinicznego. Wszyscy lekarze LABS67 przechodzą przez Academi67 i dostosowują się do protokołów koncernu.',
+    hero_btn1: '// Programy szkoleniowe',
+    hero_btn2: 'Aplikuj →',
+    chat_online: '● Online',
+    sec_tag_0: '// Наш подход',
+    sec_tag_1: '// Программы',
+    sec_tag_2: '// Для кого',
+    sec_tag_3: '// Aplikuj',
   },
   fr: {
-    title: 'Academi67 — Institut des Standards Cliniques · LABS67',
     nav_cta: 'Postuler',
-    hero_tag: '// Éducation · Standards · Futur',
-    hero_h1_1: 'Institut des Standards',
-    hero_h1_2: 'Cliniques du Futur',
-    hero_sub: 'Pas une mise à niveau — un redémarrage complet de la pensée clinique. Tous les médecins LABS67 passent par Academi67.',
-    back: '← LABS67',
+    h_eyebrow: '// Academi67 · Groupe LABS67',
+    hero_sub: 'Pas une mise à niveau — un redémarrage complet de la pensée clinique. Tous les médecins LABS67 passent par Academi67 et s\'adaptent aux protocoles du groupe.',
+    hero_btn1: '// Programmes de formation',
+    hero_btn2: 'Postuler →',
+    chat_online: '● En ligne',
+    sec_tag_0: '// Наш подход',
+    sec_tag_1: '// Программы',
+    sec_tag_2: '// Для кого',
+    sec_tag_3: '// Postuler',
   },
   de: {
-    title: 'Academi67 — Institut für klinische Standards · LABS67',
     nav_cta: 'Bewerben',
-    hero_tag: '// Bildung · Standards · Zukunft',
-    hero_h1_1: 'Institut für klinische',
-    hero_h1_2: 'Standards der Zukunft',
-    hero_sub: 'Keine Qualifikationsaufwertung — ein vollständiger Neustart des klinischen Denkens. Alle LABS67-Ärzte durchlaufen Academi67.',
-    back: '← LABS67',
+    h_eyebrow: '// Academi67 · LABS67 Konzern',
+    hero_sub: 'Keine Qualifikationsaufwertung — ein vollständiger Neustart des klinischen Denkens. Alle LABS67-Ärzte durchlaufen Academi67 und passen sich an die Konzernprotokolle an.',
+    hero_btn1: '// Ausbildungsprogramme',
+    hero_btn2: 'Bewerben →',
+    chat_online: '● Online',
+    sec_tag_0: '// Наш подход',
+    sec_tag_1: '// Программы',
+    sec_tag_2: '// Для кого',
+    sec_tag_3: '// Bewerben',
   },
 };
 let currentLang = localStorage.getItem('labs67_lang') || 'by';

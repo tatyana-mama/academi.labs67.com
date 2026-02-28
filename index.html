@@ -183,9 +183,9 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
     </div>
   </a>
   <div class="nav-links">
-    <a href="#manifesto" class="nl">О нас</a>
-    <a href="#tracks" class="nl">Программы</a>
-    <a href="#who" class="nl">Для кого</a>
+    <a href="#manifesto" class="nl" data-i18n="nav_about">Пра нас</a>
+    <a href="#tracks" class="nl" data-i18n="nav_programs">Праграмы</a>
+    <a href="#who" class="nl" data-i18n="nav_who">Для каго</a>
     <a href="#apply" class="nl">Подать заявку</a>
   </div>
   <div class="nav-r">
@@ -215,7 +215,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
       <a href="#tracks" class="btn-out">Программы →</a>
     </div>
     <div class="hero-stats">
-      <div class="hs"><span class="hs-n">3</span><span class="hs-l">Трека</span></div>
+      <div class="hs"><span class="hs-n">3</span><span class="hs-l" data-i18n="stat_tracks">Трэкі</span></div>
       <div class="hs"><span class="hs-n">AI</span><span class="hs-l">Инструменты</span></div>
       <div class="hs"><span class="hs-n">100%</span><span class="hs-l">Стандарт</span></div>
     </div>
@@ -228,7 +228,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
       <div class="sec-tag" data-i18n="sec_tag_0">// Наш подход</div>
       <h2 class="sec-title">Не курс.<br><span class="ac">Перезагрузка.</span></h2>
       <div class="big-quote">«Каждый специалист концерна LABS67 прошёл через Academi67. Это не опция — это стандарт.»</div>
-      <p>Мы создали институт, потому что хороших врачей мало — не по знаниям, а по подходу. Academi67 меняет то, как специалист думает о пациенте, о процессе и о технологиях.</p>
+      <p data-i18n="manifesto_p">Мы стварылі інстытут таму, што добрых урачоў мала — не па ведах, а па падыходзе. Academi67 мяняе тое, як спецыяліст думае пра пацыента, пра працэс і пра тэхналогіі.</p>
     </div>
     <div class="manifesto-right">
       <div class="mcard">
@@ -257,7 +257,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
 
 <section class="section" id="tracks">
   <div class="sec-tag" data-i18n="sec_tag_1">// Программы</div>
-  <h2 class="sec-title">Три <span class="ac">трека</span></h2>
+  <h2 class="sec-title" data-i18n="tracks_h2">Тры <span class="ac">трэкі</span></h2>
   <p class="sec-lead">Каждый трек — отдельная программа с чёткими целями и результатами.</p>
   <div class="tracks-grid">
     <div class="track-card">
@@ -334,7 +334,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
     <div class="cform">
       <div class="cf-hdr"><span class="cf-t">// ЗАЯВКА НА ОБУЧЕНИЕ</span><span class="cf-id" id="aid">APP_XXXXX</span></div>
       <div class="fr">
-        <div class="fg"><label class="fl">Имя</label><input type="text" class="fi" placeholder="ФИО"></div>
+        <div class="fg"><label class="fl" data-i18n="form_name">Імя</label><input type="text" class="fi" id="ac_name" placeholder="ФИО / Full name"></div>
         <div class="fg"><label class="fl">Телефон</label><input type="tel" class="fi" placeholder="+48 571 719 800"></div>
       </div>
       <div class="fg"><label class="fl">Email</label><input type="email" class="fi" placeholder="you@clinic.com"></div>
@@ -353,7 +353,7 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
         </select>
       </div>
       <div class="fg">
-        <label class="fl">Трек</label>
+        <label class="fl" data-i18n="form_track">Трэк</label>
         <select class="fi">
           <option style="background:#071209">Clinical Reboot (основной)</option>
           <option style="background:#071209">AI Integration Cert</option>
@@ -371,13 +371,13 @@ footer{padding:34px 44px;border-top:1px solid var(--b1);display:grid;grid-templa
     <div class="fl-logo">Academi<em>67</em></div>
     <div class="fl-p">Концерн LABS67</div>
   </div>
-  <div class="fc">© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● НАБОР ОТКРЫТ</span></div>
+  <div class="fc"><span data-i18n="footer_copy">© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● НАБОР ОТКРЫТ</span></span></div>
   <div class="fr2">+48 571 719 800<br>academi@labs67.com</div>
 </footer>
 
 <div id="cb">
   <div class="cw" id="cwin">
-    <div class="ch"><div class="chl"><div class="cav">🎓</div><div><div class="cnm">Academi67</div><div class="cst">● Онлайн</div></div></div><button class="cx" onclick="tc()">✕</button></div>
+    <div class="ch"><div class="chl"><div class="cav">🎓</div><div><div class="cnm">Academi67</div><div class="cst" data-i18n="chat_online">● Анлайн</div></div></div><button class="cx" onclick="tc()">✕</button></div>
     <div class="msgs" id="cm"><div class="mb"><span class="ms">// Academi67</span>Здравствуйте! Я помогу разобраться с программами. Что вас интересует?</div></div>
     <div class="opts" id="co">
       <button class="opt" onclick="sm('программы')">📚 Программы</button>
@@ -407,6 +407,15 @@ function appSubmit(){const b=document.querySelector('.fsub');b.textContent='// �
 // ── I18N ──
 const i18n = {
   by: {
+    manifesto_p: 'Мы стварылі інстытут таму, што добрых урачоў мала — не па ведах, а па падыходзе. Academi67 мяняе тое, як спецыяліст думае пра пацыента, пра працэс і пра тэхналогіі.',
+    footer_copy: '© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● НАБОР АДКРЫТЫ</span>',
+    form_track: 'Трэк',
+    form_name: 'Імя',
+    tracks_h2: 'Тры <span class="ac">трэкі</span>',
+    stat_tracks: 'Трэкі',
+    nav_who: 'Для каго',
+    nav_programs: 'Праграмы',
+    nav_about: 'Пра нас',
     nav_cta: 'Падаць заяўку',
     h_eyebrow: '// Academi67 · Канцэрн LABS67',
     hero_sub: 'Не павышэнне кваліфікацыі — поўная перазагрузка клінічнага мыслення. Усе ўрачы LABS67 праходзяць праз Academi67 і адаптуюцца пад пратаколы канцэрна.',
@@ -419,6 +428,15 @@ const i18n = {
     sec_tag_3: '// Падаць заявку',
   },
   ua: {
+    manifesto_p: 'Ми створили інститут тому, що хороших лікарів мало — не за знаннями, а за підходом. Academi67 змінює те, як фахівець думає про пацієнта, про процес і про технології.',
+    footer_copy: '© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● НАБІР ВІДКРИТИЙ</span>',
+    form_track: 'Трек',
+    form_name: 'Ім\'я',
+    tracks_h2: 'Три <span class="ac">треки</span>',
+    stat_tracks: 'Треки',
+    nav_who: 'Для кого',
+    nav_programs: 'Програми',
+    nav_about: 'Про нас',
     nav_cta: 'Подати заявку',
     h_eyebrow: '// Academi67 · Концерн LABS67',
     hero_sub: 'Не підвищення кваліфікації — повне перезавантаження клінічного мислення. Всі лікарі LABS67 проходять через Academi67 та адаптуються до протоколів концерну.',
@@ -431,6 +449,15 @@ const i18n = {
     sec_tag_3: '// Подати заявку',
   },
   en: {
+    manifesto_p: 'We built this institute because good doctors are rare — not in knowledge, but in approach. Academi67 changes how a specialist thinks about the patient, the process, and technology.',
+    footer_copy: '© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● ENROLMENT OPEN</span>',
+    form_track: 'Track',
+    form_name: 'Name',
+    tracks_h2: 'Three <span class="ac">tracks</span>',
+    stat_tracks: 'Tracks',
+    nav_who: 'For whom',
+    nav_programs: 'Programmes',
+    nav_about: 'About',
     nav_cta: 'Apply',
     h_eyebrow: '// Academi67 · LABS67 Concern',
     hero_sub: 'Not qualification upgrading — a complete reboot of clinical thinking. All LABS67 doctors go through Academi67 and adapt to the concern\'s protocols.',
@@ -443,6 +470,15 @@ const i18n = {
     sec_tag_3: '// Apply',
   },
   pl: {
+    manifesto_p: 'Stworzyliśmy ten instytut, ponieważ dobrych lekarzy jest mało — nie pod względem wiedzy, ale podejścia. Academi67 zmienia sposób myślenia specjalisty o pacjencie, procesie i technologii.',
+    footer_copy: '© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● REKRUTACJA OTWARTA</span>',
+    form_track: 'Ścieżka',
+    form_name: 'Imię',
+    tracks_h2: 'Trzy <span class="ac">ścieżki</span>',
+    stat_tracks: 'Ścieżki',
+    nav_who: 'Dla kogo',
+    nav_programs: 'Programy',
+    nav_about: 'O nas',
     nav_cta: 'Aplikuj',
     h_eyebrow: '// Academi67 · Koncern LABS67',
     hero_sub: 'Nie podnoszenie kwalifikacji — pełny restart myślenia klinicznego. Wszyscy lekarze LABS67 przechodzą przez Academi67 i dostosowują się do protokołów koncernu.',
@@ -455,6 +491,15 @@ const i18n = {
     sec_tag_3: '// Aplikuj',
   },
   fr: {
+    manifesto_p: 'Nous avons créé cet institut parce que les bons médecins sont rares — non par manque de connaissances, mais d\'approche. Academi67 change la façon dont le spécialiste pense au patient, au processus et à la technologie.',
+    footer_copy: '© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● INSCRIPTION OUVERTE</span>',
+    form_track: 'Voie',
+    form_name: 'Prénom',
+    tracks_h2: 'Trois <span class="ac">voies</span>',
+    stat_tracks: 'Voies',
+    nav_who: 'Pour qui',
+    nav_programs: 'Programmes',
+    nav_about: 'À propos',
     nav_cta: 'Postuler',
     h_eyebrow: '// Academi67 · Groupe LABS67',
     hero_sub: 'Pas une mise à niveau — un redémarrage complet de la pensée clinique. Tous les médecins LABS67 passent par Academi67 et s\'adaptent aux protocoles du groupe.',
@@ -467,6 +512,15 @@ const i18n = {
     sec_tag_3: '// Postuler',
   },
   de: {
+    manifesto_p: 'Wir haben dieses Institut gegründet, weil gute Ärzte selten sind — nicht an Wissen, sondern an Herangehensweise. Academi67 verändert, wie ein Spezialist über den Patienten, den Prozess und die Technologie denkt.',
+    footer_copy: '© 2025 Academi67 · LABS67<br><span style="color:var(--green);">● EINSCHREIBUNG OFFEN</span>',
+    form_track: 'Track',
+    form_name: 'Name',
+    tracks_h2: 'Drei <span class="ac">Tracks</span>',
+    stat_tracks: 'Tracks',
+    nav_who: 'Für wen',
+    nav_programs: 'Programme',
+    nav_about: 'Über uns',
     nav_cta: 'Bewerben',
     h_eyebrow: '// Academi67 · LABS67 Konzern',
     hero_sub: 'Keine Qualifikationsaufwertung — ein vollständiger Neustart des klinischen Denkens. Alle LABS67-Ärzte durchlaufen Academi67 und passen sich an die Konzernprotokolle an.',
